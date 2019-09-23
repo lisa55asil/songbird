@@ -258,7 +258,7 @@ It's recommended to start with a small formula (with only a few variables in the
 **If your graphs are going down but then going back up**, this suggests overfitting; try reducing the number of variables in your formula, or reducing `--differential-prior`/`--p-differential-prior`. As a rule of thumb, you should try to keep the number of metadata categories less than 10% the number of samples (e.g. for 100 samples, no more than 10 metadata categories).
 
 **If you have a lot of samples**, you may want to try increasing the
-`--num-random-test-examples`/`--p-num-random-test-examples` and/or
+`--num--test-examples`/`--p-num-random-test-examples` and/or
 `--batch-size`/`--p-batch-size` parameters.
 
 ### Is there anything else I can do?
@@ -391,7 +391,7 @@ The `--differential-prior` command specifies the width of the prior distribution
 
 **Q.** What's up with the `--training-column` argument?
 
-**A.** That is used for cross-validation if you have a specific reproducibility question that you are interested in answering.  If this is specified, only samples labeled "Train" under this column will be used for building the model and samples labeled "Test" will be used for cross validation.  In other words the model will attempt to predict the microbe abundances for the "Test" samples.  The resulting prediction accuracy is used to evaluate the generalizability of the model in order to determine if the model is overfitting or not.  If this argument is not specified, then 10 random samples will be chosen for the test dataset.  If you want to specify more random samples to allocate for cross-validation, the `--num-random-test-examples` argument can be specified.
+**A.** That is used for cross-validation if you have a specific reproducibility question that you are interested in answering.  If this is specified, only samples labeled "Train" under this column will be used for building the model and samples labeled "Test" will be used for cross validation.  In other words the model will attempt to predict the microbe abundances for the "Test" samples.  The resulting prediction accuracy is used to evaluate the generalizability of the model in order to determine if the model is overfitting or not.  If this argument is not specified, then 5 random samples will be chosen for the test dataset.  If you want to specify more random samples to allocate for cross-validation, the `--num-random-test-examples` argument can be specified.
 
 **Q.** How long should I expect this program to run?
 
