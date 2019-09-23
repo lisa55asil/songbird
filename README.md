@@ -76,7 +76,7 @@ standalone, you can do this using Tensorboard:
 tensorboard --logdir .
 ```
 
-When you open up Tensorboard in a web browser, it will show cross validation results and information about the loss. See [this section](https://github.com/biocore/songbird/#4-interpreting-model-fitting-information) for a description of how to interpret this information, and see [this section](https://github.com/biocore/songbird/#61-faqs-running-songbird-standalone) for details on how to use Tensorboard.
+When you open up Tensorboard in a web browser, it will show cross validation results and information about the loss. See section 4 for a description of how to interpret this information, and see section 6.1 for details on how to use Tensorboard.
 
 # 2. Using Songbird through [QIIME 2](https://qiime2.org)
 ### Installation
